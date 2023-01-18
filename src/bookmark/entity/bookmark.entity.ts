@@ -1,15 +1,15 @@
 import {Entity, PrimaryGeneratedColumn, Column, BaseEntity} from "typeorm"
 import "reflect-metadata"
 
-@Entity('bookmarks')
-export class Bookmarks extends BaseEntity {
+@Entity('bookmark')
+export class Bookmark extends BaseEntity {
     @PrimaryGeneratedColumn()
     id: number
 
     @Column({
         nullable: false
     })
-    resourceName: string
+    resource_name: string
 
     @Column({
         nullable: false
@@ -24,6 +24,6 @@ export class Bookmarks extends BaseEntity {
     @Column({
         type: 'bytea',
     })
-    previewImage: Uint8Array
+    preview_image: Uint8Array
 
 }
