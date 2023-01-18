@@ -43,5 +43,4 @@ export class CreateTableBookmark1674033449282 implements MigrationInterface {
         await queryRunner.dropTable('bookmark');
     }
 
-
 }
